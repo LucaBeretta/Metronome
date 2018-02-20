@@ -1,12 +1,18 @@
 
-
 import time
+timesig = int(input("Time Sign: "))
+bpmin = int(input("BPM: "))
 
-interval = 1
+def main(bpm = bpmin, bpb = timesig):
+    sleep = 60.0 / bpm
+    counter = 0
+    while True:
+        counter += 1
+        if counter % bpb:
+            print ('tick')
+        else:
+            print ('TICK')
+        time.sleep(sleep)
 
-t = time.time()
-
-while True:
-    if time.time() - t >= interval:
-        print("wow")
+main()
 

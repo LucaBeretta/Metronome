@@ -1,4 +1,4 @@
-
+#First implement
 import time
 timesig = int(input("Time Sign: "))
 bpmin = int(input("BPM: "))
